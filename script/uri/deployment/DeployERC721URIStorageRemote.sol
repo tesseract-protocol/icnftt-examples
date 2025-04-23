@@ -8,7 +8,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**
  * To run this script:
- * forge script script/uri/deployment/DeployERC721URIStorageRemote.sol:DeployERC721URIStorageRemote --rpc-url $COQNET_RPC_URL --account deployer --broadcast --skip-simulation -vvvv --verifier custom --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/42069/etherscan' --etherscan-api-key "verifyContract"
+ * forge script script/uri/deployment/DeployERC721URIStorageRemote.sol:DeployERC721URIStorageRemote --rpc-url $REMOTE_RPC_URL --account deployer --broadcast --skip-simulation -vvvv --verifier custom --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/42069/etherscan' --etherscan-api-key "verifyContract"
  */
 contract DeployERC721URIStorageRemote is Script {
     // Constants for ERC721URIStorageRemote

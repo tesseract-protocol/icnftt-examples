@@ -7,7 +7,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**
  * To run this script:
- * forge script script/basic/deployment/DeploySimpleTokenReceiver.sol:DeploySimpleTokenReceiver --rpc-url $COQNET_RPC_URL --account deployer --broadcast -vvvv --verifier custom --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/42069/etherscan' --etherscan-api-key "verifyContract"
+ * forge script script/basic/deployment/DeploySimpleTokenReceiver.sol:DeploySimpleTokenReceiver --rpc-url $REMOTE_RPC_URL --account deployer --broadcast -vvvv --verifier custom --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/42069/etherscan' --etherscan-api-key "verifyContract"
  */
 contract DeploySimpleTokenReceiver is Script {
     string constant ADDRESSES_FILE = "script/addresses.json";

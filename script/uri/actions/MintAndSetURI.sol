@@ -8,7 +8,7 @@ import {TeleporterFeeInfo} from "@icm-contracts/teleporter/ITeleporterMessenger.
 
 /**
  * To run this script:
- * forge script script/uri/actions/MintAndSetURI.sol:MintAndSetURI --rpc-url $CCHAIN_RPC_URL --account deployer --broadcast --skip-simulation -vvvv
+ * forge script script/uri/actions/MintAndSetURI.sol:MintAndSetURI --rpc-url $HOME_RPC_URL --account deployer --broadcast --skip-simulation -vvvv
  */
 contract MintAndSetURI is Script {
     string constant ADDRESSES_FILE = "script/addresses.json";

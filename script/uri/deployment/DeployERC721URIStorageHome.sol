@@ -9,7 +9,7 @@ import {stdJson} from "forge-std/StdJson.sol";
 
 /**
  * To run this script:
- * forge script script/uri/deployment/DeployERC721URIStorageHome.sol:DeployERC721URIStorageHome --rpc-url $CCHAIN_RPC_URL --account deployer --broadcast --skip-simulation -vvvv --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan' --etherscan-api-key "verifyContract"
+ * forge script script/uri/deployment/DeployERC721URIStorageHome.sol:DeployERC721URIStorageHome --rpc-url $HOME_RPC_URL --account deployer --broadcast --skip-simulation -vvvv --verify --verifier-url 'https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan' --etherscan-api-key "verifyContract"
  */
 contract DeployERC721URIStorageHome is Script {
     string constant HOME_NAME = "URI NFT";

@@ -12,7 +12,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
  *      propagates the change to all remote chains
  *
  * To run this script:
- * forge script script/UpdateBasicERC721BaseURI.sol:UpdateBasicERC721BaseURI --account deployer --broadcast -vvvv --rpc-url $CCHAIN_RPC_URL --skip-simulation
+ * forge script script/UpdateBasicERC721BaseURI.sol:UpdateBasicERC721BaseURI --account deployer --broadcast -vvvv --rpc-url $HOME_RPC_URL --skip-simulation
  */
 contract UpdateBasicERC721BaseURI is Script {
     // Path to the addresses JSON file

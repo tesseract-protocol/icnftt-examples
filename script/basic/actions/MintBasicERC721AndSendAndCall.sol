@@ -12,7 +12,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
  * using the sendAndCall functionality, targeting a SimpleTokenReceiver contract
  *
  * To run this script:
- * forge script script/MintBasicERC721AndSendAndCall.sol:MintBasicERC721AndSendAndCall --account tester --broadcast -vvvv --rpc-url $CCHAIN_RPC_URL --skip-simulation
+ * forge script script/MintBasicERC721AndSendAndCall.sol:MintBasicERC721AndSendAndCall --account deployer --broadcast -vvvv --rpc-url $HOME_RPC_URL --skip-simulation
  */
 contract MintBasicERC721AndSendAndCall is Script {
     // Path to the addresses JSON file

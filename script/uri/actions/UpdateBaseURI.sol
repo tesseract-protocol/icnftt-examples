@@ -8,7 +8,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**
  * To run this script:
- * forge script script/uri/actions/UpdateBaseURI.sol:UpdateBaseURI --rpc-url $CCHAIN_RPC_URL --account deployer --broadcast --skip-simulation -vvvv
+ * forge script script/uri/actions/UpdateBaseURI.sol:UpdateBaseURI --rpc-url $HOME_RPC_URL --account deployer --broadcast --skip-simulation -vvvv
  */
 contract UpdateBaseURI is Script {
     // Path to the addresses JSON file

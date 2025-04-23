@@ -11,7 +11,7 @@ import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
  * @dev A script that mints a new NFT using BasicERC721Home and transfers it to Remote
  *
  * To run this script:
- * forge script script/MintBasicERC721AndSendToRemote.sol:MintBasicERC721AndSendToRemote --account tester --broadcast -vvvv --rpc-url $CCHAIN_RPC_URL --skip-simulation
+ * forge script script/MintBasicERC721AndSendToRemote.sol:MintBasicERC721AndSendToRemote --account deployer --broadcast -vvvv --rpc-url $HOME_RPC_URL --skip-simulation
  */
 contract MintBasicERC721AndSendToRemote is Script {
     // Path to the addresses JSON file
