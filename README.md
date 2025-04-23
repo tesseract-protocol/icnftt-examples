@@ -2,6 +2,16 @@
 
 This repository contains example contracts and scripts for working with the ICNFTT (Inter-Chain NFT) framework for transferring NFTs between Avalanche L1 chains.
 
+> ## ⚠️ Warning: Experimental
+>
+> This project uses dependencies that are in early development and not yet ready for production use. Please be aware of the following:
+>
+> - **Expect breaking changes** in the ICNFTT framework and related dependencies
+> - **Code has not undergone security audits**
+> - **Implementation may contain bugs or vulnerabilities**
+>
+> This code and documentation are provided for experimental and educational purposes only. Use at your own risk.
+
 ## Overview
 
 The ICNFTT framework enables cross-chain transfers of ERC721 tokens between Avalanche L1 networks using Avalanche's Interchain Messaging (ICM) via Teleporter. This repository provides simple examples to demonstrate:
@@ -35,7 +45,7 @@ A simple implementation of the IERC721SendAndCallReceiver interface that:
 - Receives tokens from cross-chain sendAndCall operations
 - Logs all received data via events
 - Transfers tokens to itself
-- Provides a method to withdraw tokens if needed
+- The contract will lock the token it received
 
 ## Configuration
 
