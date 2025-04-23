@@ -1,6 +1,11 @@
 [profile.default]
 src = "src"
 out = "out"
+solc = "0.8.25"
 libs = ["lib"]
+evm_version = "shanghai"
+optimizer = true
+optimizer-runs = 200
+fs_permissions = [{ access = "read-write", path = "./"}]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
