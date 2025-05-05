@@ -16,3 +16,4 @@ forge-std/=lib/forge-std/src/
 openzeppelin-contracts-upgradeable/=lib/icnftt/lib/icm-contracts/lib/openzeppelin-contracts-upgradeable/
 openzeppelin-contracts/=lib/icnftt/lib/icm-contracts/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/
 subnet-evm/=lib/icnftt/lib/icm-contracts/lib/subnet-evm/
+@limitbreak/creator-token-standards/=lib/creator-token-standards/
