@@ -2,7 +2,8 @@
 pragma solidity 0.8.25;
 
 import {ERC721TokenHome} from "@icnftt/TokenHome/ERC721TokenHome.sol";
-import {ExtensionMessage} from "@icnftt/ERC721TokenTransferrer.sol";
+import {ERC721TokenTransferrer} from "@icnftt/ERC721TokenTransferrer.sol";
+import {ExtensionMessage, ExtensionMessageParams} from "@icnftt/ERC721TokenTransferrer.sol";
 
 contract BasicERC721Home is ERC721TokenHome {
     constructor(
@@ -19,7 +20,20 @@ contract BasicERC721Home is ERC721TokenHome {
         _safeMint(msg.sender, lastTokenId++);
     }
 
+    function _update(address to, uint256 tokenId, address auth)
+        internal
+        override(ERC721TokenTransferrer)
+        returns (address)
+    {
+        return super._update(to, tokenId, auth);
+    }
+
     function _updateExtensions(ExtensionMessage[] memory extensions) internal override {}
 
-    function _getExtensionMessages(uint256 tokenId) internal view override returns (ExtensionMessage[] memory) {}
+    function _getExtensionMessages(ExtensionMessageParams memory params)
+        internal
+        view
+        override
+        returns (ExtensionMessage[] memory)
+    {}
 }
