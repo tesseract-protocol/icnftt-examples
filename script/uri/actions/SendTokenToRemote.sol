@@ -2,8 +2,8 @@
 pragma solidity 0.8.25;
 
 import {Script, console, stdJson} from "forge-std/Script.sol";
-import {ERC721URIStorageHome} from "../../../src/ERC721URIStorageHome.sol";
-import {SendTokenInput} from "@icnftt/interfaces/IERC721Transferrer.sol";
+import {ERC721URIStorageHome} from "../../../src/standalone/ERC721URIStorageHome.sol";
+import {SendTokenInput} from "@icnftt/standalone/interfaces/IERC721Transferrer.sol";
 import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**

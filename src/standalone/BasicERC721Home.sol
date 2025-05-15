@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
-import {ERC721TokenHome} from "@icnftt/TokenHome/ERC721TokenHome.sol";
-import {ERC721TokenTransferrer} from "@icnftt/ERC721TokenTransferrer.sol";
-import {ExtensionMessage, ExtensionMessageParams} from "@icnftt/ERC721TokenTransferrer.sol";
+import {ERC721TokenHome} from "@icnftt/standalone/TokenHome/ERC721TokenHome.sol";
+import {ERC721TokenTransferrer} from "@icnftt/standalone/ERC721TokenTransferrer.sol";
+import {ExtensionMessage, ExtensionMessageParams} from "@icnftt/standalone/interfaces/IERC721Transferrer.sol";
 
 contract BasicERC721Home is ERC721TokenHome {
     constructor(
@@ -27,8 +27,6 @@ contract BasicERC721Home is ERC721TokenHome {
     {
         return super._update(to, tokenId, auth);
     }
-
-    function _updateExtensions(ExtensionMessage[] memory extensions) internal override {}
 
     function _getExtensionMessages(ExtensionMessageParams memory params)
         internal

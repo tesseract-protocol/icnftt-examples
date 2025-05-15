@@ -2,7 +2,7 @@
 pragma solidity 0.8.25;
 
 import {Script, console, stdJson} from "forge-std/Script.sol";
-import {SimpleTokenReceiver} from "../../../src/SimpleTokenReceiver.sol";
+import {SimpleTokenReceiver} from "../../../src/standalone/SimpleTokenReceiver.sol";
 import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**

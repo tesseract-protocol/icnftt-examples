@@ -2,8 +2,8 @@
 pragma solidity 0.8.25;
 
 import {Script, console, stdJson} from "forge-std/Script.sol";
-import {BasicERC721Home} from "../../../src/BasicERC721Home.sol";
-import {SendAndCallInput} from "@icnftt/interfaces/IERC721Transferrer.sol";
+import {BasicERC721Home} from "../../../src/standalone/BasicERC721Home.sol";
+import {SendAndCallInput} from "@icnftt/standalone/interfaces/IERC721Transferrer.sol";
 import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 
 /**

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import {Script, console, stdJson} from "forge-std/Script.sol";
-import {BasicERC721Remote} from "../../../src/BasicERC721Remote.sol";
+import {BasicERC721Remote} from "../../../src/standalone/BasicERC721Remote.sol";
 import {TeleporterFeeInfo} from "@icm-contracts/teleporter/ITeleporterMessenger.sol";
 import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 

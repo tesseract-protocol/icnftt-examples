@@ -3,7 +3,7 @@ pragma solidity 0.8.25;
 
 import {console} from "forge-std/console.sol";
 import {Script} from "forge-std/Script.sol";
-import {ERC721URIStorageHome} from "../../../src/ERC721URIStorageHome.sol";
+import {ERC721URIStorageHome} from "../../../src/standalone/ERC721URIStorageHome.sol";
 import {WarpMessengerMock} from "../../mock/WarpMessengerMock.sol";
 import {stdJson} from "forge-std/StdJson.sol";
 

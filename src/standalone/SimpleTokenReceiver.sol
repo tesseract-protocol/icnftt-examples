@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
-import {IERC721SendAndCallReceiver} from "@icnftt/interfaces/IERC721SendAndCallReceiver.sol";
+import {IERC721SendAndCallReceiver} from "@icnftt/standalone/interfaces/IERC721SendAndCallReceiver.sol";
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 /**
